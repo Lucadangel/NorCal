@@ -4,34 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/asset/style/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="/asset/style/style_home.css">
+    <title>Home</title>
 </head>
 <body>
-    <header>
+    <div class="contaneir">
         <h1>NorCal Time Trial Series</h1>
-        <img src="/asset/img/car1-3dda6fa4.png" alt="Background"> 
-        <h2>Upcoming Events</h2>
-        <img src="/asset/img/LOGO-fc6fecfc.png" alt="Logo" width="200px" height="200px">
-    
-    </header>
-    <nav class="Menu">
-        <a href="/template/Home.html">Home</a>
-        <a href="/template/About.html">About</a>
-        <a href="/template/Contact.html">Contact</a>
-        
-       </nav>
-         <p>
-            February 12
-            Board Meeting
-      
-            February 25
-            Drivers Zoom Meeting
-      
-            March 12
-            First Event at Thunderhill!
-      </p> 
-    </div>
+        <div class="burger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav class="Menu" id="navMenu">
+            <ul>
+                <li><a href="/template/Home.html">Home</a></li>
+                <li><a href="/template/About.html">About</a></li>
+                <li><a href="/template/Contact.html">Contact</a></li>
+                <li><a href="/template/Rules.html">Safety Rules</a></li>
+            </ul>
+        </nav>   
+ 
+     <div class="background"></div>
 
-</body>
+        <header >
+
+            
+            <h2>Upcoming Events</h2>
+    
+        </header>
+       <div>
+        <img class=logo src="/asset/img/LOGO-fc6fecfc.png" alt="Logo" width="150px" height="150px">
+    
+             <div class="dates">
+               <div class="event"> February 12 <br>
+                Board Meeting</div>
+          
+                <div class="event">  February 25<br>
+                Drivers Zoom Meeting</div>
+          
+                <div class="event">  March 12<br>
+                First Event at Thunderhill!</div>
+          </div> 
+        </div>
+    </div>
+   
+    <script>
+function toggleMenu() {
+    console.log('toggleMenu() function is being called!');
+    var navMenu = document.getElementById('navMenu');
+    navMenu.style.display = (navMenu.style.display === 'block' || navMenu.style.display === '') ? 'none' : 'block';
+}
+        </script>
+        </body>
 </html>
