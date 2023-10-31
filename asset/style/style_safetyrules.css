@@ -1,0 +1,51 @@
+
+th, td {
+        border: 3px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+      
+th {
+        font-weight: bold;
+      }
+      
+table {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-collapse: collapse;
+        background-color: grey;
+        align-content: center;
+      }
+
+    .lists {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+           }
+    
+
+ h1, h2 {
+    text-align: center;
+       }
+
+
+#main {
+font-weight: bold;
+       }
+
+li, ol {
+margin-bottom: 10px;
+ margin-left: 0px;
+     }
+
+
+     body {
+
+        color: white;
+        background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+    url(../img/pexels-pixabay-63294.jpg);
+       
+       }
